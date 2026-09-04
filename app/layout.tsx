@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NODEBETA AI — Deep Reasoning & Deterministic Computation",
+  title: "NODEBETA AI — Deep Reasoning Engine",
   description:
-    "Autonomous cognitive architecture constructed for analytical rigor, formal proof verification, and multi-hypothesis reasoning.",
+    "The world's most powerful deep-reasoning AI. Think deeper, reason stronger, solve anything.",
 };
 
 export default function RootLayout({
@@ -15,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="bg-[#060709] text-[#E5E7EB] selection:bg-white selection:text-black">
+    <html lang="en">
+      <body className="bg-node-black text-node-white antialiased">
         {children}
       </body>
     </html>
